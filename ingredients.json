@@ -1,0 +1,27 @@
+{
+  "ingredients": [
+    {
+      "name": "Niacinamide",
+      "aliases": ["nicotinamide", "vitamin B3", "niacin"],
+      "category": "good",
+      "comedogenic_rating": 0,
+      "benefits": "Reduces inflammation, minimizes pores, regulates oil",
+      "notes": "Well-tolerated by most skin types"
+    },
+    {
+      "name": "Coconut Oil",
+      "aliases": ["cocos nucifera oil"],
+      "category": "bad",
+      "comedogenic_rating": 4,
+      "concerns": "Highly comedogenic, clogs pores",
+      "notes": "Avoid if acne-prone"
+    },
+    {
+      "name": "Glycerin",
+      "aliases": ["glycerol"],
+      "category": "neutral",
+      "comedogenic_rating": 0,
+      "benefits": "Humectant, draws moisture",
+      "notes": "Generally safe, context-dependent"
+    },
+    
