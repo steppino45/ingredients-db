@@ -87,7 +87,7 @@ The database is publicly accessible as a raw JSON file and can be fetched direct
 **Fetch URL:**
 
 ```
-https://raw.githubusercontent.com/yourusername/ingredients-db/main/ingredients.json
+https://raw.githubusercontent.com/steppino45/ingredients-db/main/ingredients.json
 ```
 
 **Example — fetching and searching by ingredient name:**
