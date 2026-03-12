@@ -1,34 +1,537 @@
-[
-  {
-    "name": "Niacinamide",
-    "aliases": ["nicotinamide", "vitamin B3", "niacin"],
-    "category": "good",
-    "comedogenic_rating": 0,
-    "benefits": "Reduces inflammation, minimizes pores, regulates oil",
-    "notes": "Well-tolerated by most skin types"
-  },
-  {
-    "name": "Coconut Oil",
-    "aliases": ["cocos nucifera oil"],
-    "category": "bad",
-    "comedogenic_rating": 4,
-    "concerns": "Highly comedogenic, clogs pores",
-    "notes": "Avoid if acne-prone"
-  },
-  {
-    "name": "Glycerin",
-    "aliases": ["glycerol"],
-    "category": "neutral",
-    "comedogenic_rating": 0,
-    "benefits": "Humectant, draws moisture",
-    "notes": "Generally safe, context-dependent"
-  },
-  {
-    "name": "Hyaluronic Acid",
-    "aliases": ["sodium hyaluronate", "HA"],
-    "category": "good",
-    "comedogenic_rating": 0,
-    "benefits": "Intense hydration, plumping, moisture retention",
-    "notes": "Works best on damp skin, suitable for all skin types"
-  }
-]
+{
+  "version": "1.0",
+  "last_updated": "2026-03-10",
+  "author": "Dr. Ifeanyi R. Chukwuka",
+  "source": "Clinical dermatology reference + curated research",
+  "ingredients": [
+    {
+      "name": "Niacinamide",
+      "aliases": ["nicotinamide", "vitamin b3", "niacin"],
+      "category": "good",
+      "comedogenic_rating": 0,
+      "reason": "Brightens skin tone, reduces pore appearance, strengthens skin barrier, anti-inflammatory. Well tolerated by most skin types including sensitive and acne-prone skin.",
+      "notes": "One of the most versatile and well-researched skincare ingredients. Effective at concentrations of 2-10%."
+    },
+    {
+      "name": "Hyaluronic Acid",
+      "aliases": ["sodium hyaluronate", "hyaluronan", "ha"],
+      "category": "good",
+      "comedogenic_rating": 0,
+      "reason": "Powerful humectant that attracts and retains moisture in the skin. Plumps and hydrates without clogging pores.",
+      "notes": "Works best applied to damp skin. Sodium hyaluronate is a smaller molecule that penetrates deeper."
+    },
+    {
+      "name": "Glycolic Acid",
+      "aliases": ["glycolic", "aha", "alpha hydroxy acid"],
+      "category": "good",
+      "comedogenic_rating": 0,
+      "reason": "AHA exfoliant that removes dead skin cells, improves texture, fades hyperpigmentation and stimulates collagen production.",
+      "notes": "Increases sun sensitivity — always use SPF. Start at low concentrations (5-8%). Not recommended for sensitive skin."
+    },
+    {
+      "name": "Salicylic Acid",
+      "aliases": ["bha", "beta hydroxy acid", "sal acid"],
+      "category": "good",
+      "comedogenic_rating": 0,
+      "reason": "Oil-soluble BHA exfoliant that penetrates pores, dissolves sebum plugs, anti-inflammatory. Excellent for acne-prone and oily skin.",
+      "notes": "Avoid if allergic to aspirin. Use SPF. Effective at 0.5-2% concentrations."
+    },
+    {
+      "name": "Retinol",
+      "aliases": [
+        "vitamin a",
+        "retinoids",
+        "retinoic acid",
+        "retinyl palmitate",
+        "retinaldehyde"
+      ],
+      "category": "good",
+      "comedogenic_rating": 0,
+      "reason": "Gold standard anti-aging ingredient. Increases cell turnover, stimulates collagen, fades dark spots and improves skin texture.",
+      "notes": "Start low and slow — 0.025% to 0.1%. Can cause purging, dryness and irritation initially. Avoid during pregnancy. Always use SPF."
+    },
+    {
+      "name": "Vitamin C",
+      "aliases": [
+        "ascorbic acid",
+        "l-ascorbic acid",
+        "ascorbyl glucoside",
+        "sodium ascorbyl phosphate",
+        "magnesium ascorbyl phosphate"
+      ],
+      "category": "good",
+      "comedogenic_rating": 0,
+      "reason": "Potent antioxidant that brightens skin, fades hyperpigmentation, boosts collagen synthesis and protects against UV damage.",
+      "notes": "Pure L-ascorbic acid is most effective but unstable — look for formulas below pH 3.5. Store away from light and air."
+    },
+    {
+      "name": "Azelaic Acid",
+      "aliases": ["azelaic"],
+      "category": "good",
+      "comedogenic_rating": 0,
+      "reason": "Antibacterial, anti-inflammatory, and brightening. Effective for acne, rosacea and post-inflammatory hyperpigmentation.",
+      "notes": "One of the few actives safe during pregnancy. Available OTC at 10% and prescription at 15-20%. Very well tolerated."
+    },
+    {
+      "name": "Ceramides",
+      "aliases": [
+        "ceramide np",
+        "ceramide ap",
+        "ceramide eop",
+        "ceramide ng",
+        "ceramide ag"
+      ],
+      "category": "good",
+      "comedogenic_rating": 0,
+      "reason": "Essential lipids that form the skin barrier. Restore and maintain moisture retention, protect against environmental damage.",
+      "notes": "Especially beneficial for dry, sensitive, eczema-prone skin. Most effective when combined with cholesterol and fatty acids."
+    },
+    {
+      "name": "Peptides",
+      "aliases": [
+        "palmitoyl tripeptide",
+        "palmitoyl pentapeptide",
+        "copper peptides",
+        "matrixyl",
+        "argireline"
+      ],
+      "category": "good",
+      "comedogenic_rating": 0,
+      "reason": "Signal proteins that stimulate collagen and elastin production. Anti-aging, firming and barrier-supportive.",
+      "notes": "Work best in leave-on products. Rinse-off products don't allow adequate absorption time."
+    },
+    {
+      "name": "Centella Asiatica",
+      "aliases": [
+        "cica",
+        "gotu kola",
+        "asiaticoside",
+        "madecassoside",
+        "centella"
+      ],
+      "category": "good",
+      "comedogenic_rating": 0,
+      "reason": "Potent anti-inflammatory and wound-healing herb. Soothes irritated skin, strengthens barrier, stimulates collagen.",
+      "notes": "Popular in Korean skincare. Excellent for sensitive, compromised or post-procedure skin."
+    },
+    {
+      "name": "Green Tea Extract",
+      "aliases": [
+        "camellia sinensis",
+        "epigallocatechin gallate",
+        "egcg",
+        "green tea"
+      ],
+      "category": "good",
+      "comedogenic_rating": 0,
+      "reason": "Rich in antioxidants that neutralize free radicals, reduce inflammation and protect against UV-induced damage.",
+      "notes": "Anti-aging and anti-acne properties. Works well combined with other antioxidants."
+    },
+    {
+      "name": "Licorice Root Extract",
+      "aliases": [
+        "glycyrrhiza glabra",
+        "licorice extract",
+        "glabridin",
+        "glycyrrhizin"
+      ],
+      "category": "good",
+      "comedogenic_rating": 0,
+      "reason": "Brightening and anti-inflammatory. Inhibits melanin production, fades dark spots and soothes redness.",
+      "notes": "Gentler alternative to hydroquinone for hyperpigmentation. Also has antioxidant properties."
+    },
+    {
+      "name": "Alpha Arbutin",
+      "aliases": ["arbutin", "alpha-arbutin"],
+      "category": "good",
+      "comedogenic_rating": 0,
+      "reason": "Tyrosinase inhibitor that reduces melanin production. Effective brightening agent for hyperpigmentation and dark spots.",
+      "notes": "More stable and effective than beta-arbutin. Gentler than hydroquinone. Effective at 1-2%."
+    },
+    {
+      "name": "Tranexamic Acid",
+      "aliases": ["tranexamic", "txa"],
+      "category": "good",
+      "comedogenic_rating": 0,
+      "reason": "Brightening agent that targets melasma, post-inflammatory hyperpigmentation and uneven skin tone.",
+      "notes": "Originally a pharmaceutical hemostatic agent. Increasingly used in skincare at 2-5%. Well tolerated."
+    },
+    {
+      "name": "Panthenol",
+      "aliases": [
+        "vitamin b5",
+        "d-panthenol",
+        "dexpanthenol",
+        "pantothenic acid"
+      ],
+      "category": "good",
+      "comedogenic_rating": 0,
+      "reason": "Humectant and skin-restoring ingredient. Deeply hydrating, promotes wound healing, reduces inflammation.",
+      "notes": "Converts to pantothenic acid in skin. Excellent for dry, irritated or damaged skin. Very well tolerated."
+    },
+    {
+      "name": "Allantoin",
+      "aliases": ["allantoin"],
+      "category": "good",
+      "comedogenic_rating": 0,
+      "reason": "Soothing, healing and keratolytic agent. Softens skin, promotes cell regeneration, calms irritation.",
+      "notes": "Derived from comfrey plant. Excellent for sensitive and irritated skin. Enhances penetration of other ingredients."
+    },
+    {
+      "name": "Squalane",
+      "aliases": ["squalene", "sugarcane squalane", "olive squalane"],
+      "category": "good",
+      "comedogenic_rating": 1,
+      "reason": "Lightweight emollient that mimics skin's natural sebum. Deeply moisturizing, antioxidant, non-greasy.",
+      "notes": "Squalane (saturated) is stable. Squalene (unsaturated) oxidizes and can be comedogenic. Excellent for all skin types."
+    },
+    {
+      "name": "Jojoba Oil",
+      "aliases": ["simmondsia chinensis", "jojoba"],
+      "category": "good",
+      "comedogenic_rating": 2,
+      "reason": "Technically a liquid wax that closely resembles skin's sebum. Balancing, non-greasy, antibacterial properties.",
+      "notes": "Suitable for oily and acne-prone skin due to its sebum-balancing properties. Stable and long shelf life."
+    },
+    {
+      "name": "Rosehip Oil",
+      "aliases": ["rosa canina", "rosehip seed oil", "rosa rubiginosa"],
+      "category": "good",
+      "comedogenic_rating": 1,
+      "reason": "Rich in vitamin A, C and essential fatty acids. Anti-aging, brightening, improves skin texture and scars.",
+      "notes": "Can oxidize quickly — store in a cool dark place. Best used at night. Patch test recommended for acne-prone skin."
+    },
+    {
+      "name": "Sunflower Seed Oil",
+      "aliases": ["helianthus annuus", "sunflower oil"],
+      "category": "good",
+      "comedogenic_rating": 0,
+      "reason": "Rich in linoleic acid which strengthens the skin barrier. Lightweight, non-comedogenic and soothing.",
+      "notes": "High linoleic acid content makes it particularly beneficial for acne-prone skin. Very gentle and well tolerated."
+    },
+    {
+      "name": "Coconut Oil",
+      "aliases": [
+        "cocos nucifera",
+        "virgin coconut oil",
+        "fractionated coconut oil"
+      ],
+      "category": "bad",
+      "comedogenic_rating": 4,
+      "reason": "Highly comedogenic — clogs pores and triggers breakouts in most skin types, especially acne-prone and oily skin.",
+      "notes": "Despite its popularity, coconut oil is one of the most comedogenic oils available. Fine for hair and body but avoid on face."
+    },
+    {
+      "name": "Cocoa Butter",
+      "aliases": ["theobroma cacao", "cacao butter"],
+      "category": "bad",
+      "comedogenic_rating": 4,
+      "reason": "Highly comedogenic. Clogs pores and causes breakouts. Heavy occlusive that traps debris in pores.",
+      "notes": "Fine for body moisturization on non-acne-prone areas. Avoid on face and chest if acne-prone."
+    },
+    {
+      "name": "Isopropyl Myristate",
+      "aliases": ["ipm", "isopropyl myristate"],
+      "category": "bad",
+      "comedogenic_rating": 5,
+      "reason": "One of the most comedogenic ingredients in cosmetics. Penetration enhancer that carries other ingredients deep into pores, causing blockages.",
+      "notes": "Rated 5/5 on comedogenic scale. Commonly found in foundations and heavy moisturizers. Avoid entirely if acne-prone."
+    },
+    {
+      "name": "Acetylated Lanolin",
+      "aliases": ["acetylated lanolin alcohol", "lanolin"],
+      "category": "bad",
+      "comedogenic_rating": 4,
+      "reason": "Highly comedogenic derivative of lanolin. Clogs pores and can cause milia and breakouts.",
+      "notes": "Regular lanolin is less comedogenic than acetylated forms. Common allergen — can cause contact dermatitis."
+    },
+    {
+      "name": "Algae Extract",
+      "aliases": ["seaweed extract", "algae", "kelp extract", "spirulina"],
+      "category": "bad",
+      "comedogenic_rating": 5,
+      "reason": "Certain algae extracts are highly comedogenic and can trigger breakouts in acne-prone skin.",
+      "notes": "Not all algae are equal — some are beneficial. However without knowing the specific type, best avoided by acne-prone skin."
+    },
+    {
+      "name": "Carrageenan",
+      "aliases": ["irish moss extract", "chondrus crispus"],
+      "category": "bad",
+      "comedogenic_rating": 3,
+      "reason": "Can be comedogenic and has been linked to inflammation in some studies. Used as a thickener in many products.",
+      "notes": "Controversial ingredient. Moderately comedogenic. Those with acne-prone skin should approach with caution."
+    },
+    {
+      "name": "Heavy Mineral Oil",
+      "aliases": [
+        "paraffinum liquidum",
+        "mineral oil",
+        "petrolatum",
+        "paraffin oil"
+      ],
+      "category": "bad",
+      "comedogenic_rating": 4,
+      "reason": "Heavy occlusive that forms a thick barrier trapping dirt and bacteria in pores. Can cause breakouts and milia.",
+      "notes": "Light mineral oil is less comedogenic. Heavy grades are problematic for acne-prone skin. Petroleum-derived."
+    },
+    {
+      "name": "Isopropyl Palmitate",
+      "aliases": ["isopropyl palmitate"],
+      "category": "bad",
+      "comedogenic_rating": 4,
+      "reason": "Highly comedogenic emollient. Clogs pores and triggers breakouts, particularly in acne-prone skin.",
+      "notes": "Common in foundations and heavy creams. Check ingredient labels carefully if acne-prone."
+    },
+    {
+      "name": "Myristyl Myristate",
+      "aliases": ["myristyl myristate"],
+      "category": "bad",
+      "comedogenic_rating": 5,
+      "reason": "Rated maximum 5/5 on comedogenic scale. One of the most pore-clogging ingredients in cosmetic formulations.",
+      "notes": "Used as an emollient and thickener. Completely avoid if acne-prone or sensitive."
+    },
+    {
+      "name": "Palm Oil",
+      "aliases": ["elaeis guineensis", "palm kernel oil", "palmitic acid"],
+      "category": "bad",
+      "comedogenic_rating": 4,
+      "reason": "Highly comedogenic oil that clogs pores. High in palmitic acid which can disrupt the skin barrier.",
+      "notes": "Also an environmental concern due to deforestation. Avoid on acne-prone skin."
+    },
+    {
+      "name": "Sodium Lauryl Sulfate",
+      "aliases": ["sls", "sodium lauryl sulfate", "sodium dodecyl sulfate"],
+      "category": "bad",
+      "comedogenic_rating": 0,
+      "reason": "Harsh detergent that strips skin of natural oils, disrupts the skin barrier, causes irritation and dryness.",
+      "notes": "Very different concern from comedogenicity — SLS is an irritant and barrier disruptor. Common in foaming cleansers and shampoos."
+    },
+    {
+      "name": "Denatured Alcohol",
+      "aliases": [
+        "alcohol denat",
+        "sd alcohol",
+        "ethanol",
+        "isopropyl alcohol"
+      ],
+      "category": "bad",
+      "comedogenic_rating": 0,
+      "reason": "At high concentrations, strips skin barrier, causes dryness, irritation and long-term sensitization.",
+      "notes": "Small amounts as a delivery vehicle may be acceptable. Problematic when listed in top 5 ingredients. Especially bad for dry and sensitive skin."
+    },
+    {
+      "name": "Synthetic Fragrance",
+      "aliases": ["fragrance", "parfum", "aroma", "perfume"],
+      "category": "bad",
+      "comedogenic_rating": 0,
+      "reason": "Leading cause of contact dermatitis in cosmetics. Can contain hundreds of undisclosed chemicals triggering allergic and irritant reactions.",
+      "notes": "Does not need to disclose individual components under current regulations. Avoid in leave-on products especially if sensitive."
+    },
+    {
+      "name": "Essential Oils",
+      "aliases": [
+        "essential oil",
+        "tea tree oil",
+        "lavender oil",
+        "eucalyptus oil"
+      ],
+      "category": "bad",
+      "comedogenic_rating": 0,
+      "reason": "At high concentrations, essential oils are potent irritants and common sensitizers causing contact dermatitis.",
+      "notes": "Concentration dependent — trace amounts may be acceptable. Natural does not mean safe. Particularly risky in leave-on products."
+    },
+    {
+      "name": "Witch Hazel",
+      "aliases": ["hamamelis virginiana", "witch hazel extract"],
+      "category": "bad",
+      "comedogenic_rating": 0,
+      "reason": "Alcohol-based witch hazel strips the skin barrier and causes irritation despite its perceived toning benefits.",
+      "notes": "Alcohol-free witch hazel is less problematic. The toning effect is largely the result of skin irritation, not true improvement."
+    },
+    {
+      "name": "Menthol",
+      "aliases": ["menthol", "l-menthol"],
+      "category": "bad",
+      "comedogenic_rating": 0,
+      "reason": "Creates a false cooling sensation while actually irritating skin. Can trigger rosacea flares and sensitization.",
+      "notes": "The cooling feeling is nerve stimulation, not skin benefit. Particularly problematic for rosacea and sensitive skin types."
+    },
+    {
+      "name": "Peppermint Oil",
+      "aliases": ["mentha piperita", "peppermint extract"],
+      "category": "bad",
+      "comedogenic_rating": 0,
+      "reason": "High menthol content makes it a significant irritant. Causes redness, stinging and sensitization especially in sensitive skin.",
+      "notes": "Popular in lip products and scalp treatments but problematic on facial skin. Avoid if rosacea-prone."
+    },
+    {
+      "name": "Lemon Oil",
+      "aliases": ["citrus limon", "lemon extract", "lemon juice"],
+      "category": "bad",
+      "comedogenic_rating": 0,
+      "reason": "Phototoxic — causes severe UV-induced skin reactions. Highly acidic and irritating, disrupts skin barrier.",
+      "notes": "Particularly dangerous — can cause permanent hyperpigmentation when skin is exposed to sunlight. Never use before sun exposure."
+    },
+    {
+      "name": "Lime Oil",
+      "aliases": ["citrus aurantifolia", "lime extract"],
+      "category": "bad",
+      "comedogenic_rating": 0,
+      "reason": "Phototoxic citrus oil that causes UV-induced skin damage, burns and hyperpigmentation.",
+      "notes": "Same phototoxicity concerns as lemon oil. Furocoumarins in citrus oils react with UV light causing phytophotodermatitis."
+    },
+    {
+      "name": "Cinnamon Oil",
+      "aliases": [
+        "cinnamomum zeylanicum",
+        "cinnamon bark oil",
+        "cinnamaldehyde"
+      ],
+      "category": "bad",
+      "comedogenic_rating": 0,
+      "reason": "Potent skin sensitizer and irritant. Cinnamaldehyde is a well-documented contact allergen causing dermatitis.",
+      "notes": "Often marketed as a plumping agent in lip products due to irritation-induced swelling. Not a benefit — it is inflammation."
+    },
+    {
+      "name": "Glycerin",
+      "aliases": ["glycerol", "glycerine"],
+      "category": "neutral",
+      "comedogenic_rating": 0,
+      "reason": "Effective humectant that draws moisture into skin. Gentle, well tolerated and widely used across all formulations.",
+      "notes": "At very high concentrations can draw moisture from deeper skin layers in dry climates. Generally considered safe and beneficial."
+    },
+    {
+      "name": "Water",
+      "aliases": ["aqua", "eau", "water"],
+      "category": "neutral",
+      "comedogenic_rating": 0,
+      "reason": "Base ingredient and universal solvent in most formulations. No independent skin benefit but essential for product stability.",
+      "notes": "Usually listed first as the primary ingredient. No concerns."
+    },
+    {
+      "name": "Propylene Glycol",
+      "aliases": ["pg", "propylene glycol", "1,2-propanediol"],
+      "category": "neutral",
+      "comedogenic_rating": 0,
+      "reason": "Humectant and penetration enhancer. Generally safe at low concentrations but can cause irritation in sensitive individuals.",
+      "notes": "Can cause contact dermatitis in sensitive individuals at high concentrations. Generally regarded as safe in cosmetic amounts."
+    },
+    {
+      "name": "Butylene Glycol",
+      "aliases": ["bg", "butylene glycol", "1,3-butanediol"],
+      "category": "neutral",
+      "comedogenic_rating": 1,
+      "reason": "Humectant and solvent. Better tolerated than propylene glycol. Helps other ingredients absorb into skin.",
+      "notes": "Generally considered a gentler alternative to propylene glycol. Low irritation potential."
+    },
+    {
+      "name": "Cetyl Alcohol",
+      "aliases": ["cetyl alcohol", "1-hexadecanol"],
+      "category": "neutral",
+      "comedogenic_rating": 2,
+      "reason": "Fatty alcohol used as emollient and emulsifier. Softens skin and stabilizes formulations. Not drying like regular alcohols.",
+      "notes": "Despite the name, fatty alcohols are not the same as drying alcohols. Generally well tolerated. Mild comedogenic potential."
+    },
+    {
+      "name": "Stearyl Alcohol",
+      "aliases": ["stearyl alcohol", "1-octadecanol"],
+      "category": "neutral",
+      "comedogenic_rating": 2,
+      "reason": "Fatty alcohol that acts as emollient and thickener. Conditions skin without the irritation of drying alcohols.",
+      "notes": "Safe for most skin types. Mild comedogenic potential — those with very acne-prone skin should be aware."
+    },
+    {
+      "name": "Cetearyl Alcohol",
+      "aliases": ["cetearyl alcohol", "cetostearyl alcohol"],
+      "category": "neutral",
+      "comedogenic_rating": 2,
+      "reason": "Blend of cetyl and stearyl alcohols. Emollient, emulsifier and stabilizer. Conditions and softens skin.",
+      "notes": "Well tolerated by most. Mild comedogenic potential. Common in creams and lotions."
+    },
+    {
+      "name": "Dimethicone",
+      "aliases": [
+        "silicone",
+        "dimethicone",
+        "cyclopentasiloxane",
+        "cyclomethicone",
+        "polymethylsiloxane"
+      ],
+      "category": "neutral",
+      "comedogenic_rating": 1,
+      "reason": "Silicone that creates a smooth, protective film on skin. Seals in moisture, improves texture and reduces water loss.",
+      "notes": "Not absorbed into skin. Low irritation potential. Some debate around environmental impact. Helps product spread evenly."
+    },
+    {
+      "name": "Xanthan Gum",
+      "aliases": ["xanthan gum"],
+      "category": "neutral",
+      "comedogenic_rating": 0,
+      "reason": "Natural polysaccharide used as a thickener and stabilizer. Inert and non-irritating.",
+      "notes": "No known skin concerns. Simply helps formulations achieve the right consistency."
+    },
+    {
+      "name": "Carbomer",
+      "aliases": [
+        "carbopol",
+        "carbomer 940",
+        "carbomer 980",
+        "acrylates copolymer"
+      ],
+      "category": "neutral",
+      "comedogenic_rating": 0,
+      "reason": "Synthetic polymer used as a thickener and stabilizer. Generally inert with no known skin benefit or harm.",
+      "notes": "No significant concerns. Functional ingredient that gives gels their texture."
+    },
+    {
+      "name": "Phenoxyethanol",
+      "aliases": ["phenoxyethanol", "2-phenoxyethanol"],
+      "category": "neutral",
+      "comedogenic_rating": 0,
+      "reason": "Common preservative that prevents microbial growth. Generally well tolerated at regulated concentrations.",
+      "notes": "Considered safe up to 1% concentration per EU regulations. Some sensitivity possible in very reactive skin types."
+    },
+    {
+      "name": "Tocopherol",
+      "aliases": [
+        "vitamin e",
+        "tocopherol",
+        "tocopheryl acetate",
+        "alpha-tocopherol"
+      ],
+      "category": "neutral",
+      "comedogenic_rating": 2,
+      "reason": "Antioxidant vitamin that neutralizes free radicals and supports skin barrier. Mildly moisturizing.",
+      "notes": "Mild comedogenic potential in pure form. Tocopheryl acetate is less likely to cause breakouts. Generally beneficial but not as potent as vitamin C."
+    },
+    {
+      "name": "Shea Butter",
+      "aliases": ["butyrospermum parkii", "shea butter", "shea"],
+      "category": "neutral",
+      "comedogenic_rating": 0,
+      "reason": "Rich emollient with anti-inflammatory properties. Excellent for dry skin but may be too heavy for oily or acne-prone skin.",
+      "notes": "Comedogenic rating varies — unrefined shea butter may cause breakouts in sensitive acne-prone individuals. Highly beneficial for dry and eczema-prone skin."
+    },
+    {
+      "name": "Aloe Vera",
+      "aliases": ["aloe barbadensis", "aloe vera gel", "aloe"],
+      "category": "neutral",
+      "comedogenic_rating": 0,
+      "reason": "Soothing, hydrating and mildly anti-inflammatory. Calms sunburn and irritation. Lightweight and well tolerated.",
+      "notes": "Mostly water with some beneficial polysaccharides. Benefits are real but modest. Generally excellent for all skin types."
+    },
+    {
+      "name": "Chamomile Extract",
+      "aliases": [
+        "matricaria chamomilla",
+        "chamomile",
+        "bisabolol",
+        "matricaria extract"
+      ],
+      "category": "neutral",
+      "comedogenic_rating": 0,
+      "reason": "Anti-inflammatory and soothing botanical. Calms redness and irritation. Contains bisabolol and apigenin.",
+      "notes": "Generally well tolerated. Those with ragweed or daisy family allergies should patch test as cross-reactivity is possible."
+    }
+  ]
+}
