@@ -4,7 +4,7 @@
 
 A curated, clinically-informed database of cosmetic and skincare ingredients. Each entry is rated by category, comedogenic potential, and includes a clinical rationale and usage notes.
 
-Compiled and maintained by **Dr. Ifeanyi R. Chukwuka, MBBS**, Senior Resident in Dermatology.
+Compiled and maintained by **Dr. Ifeanyi R. Chukwuka, MBBS, M.S., MWACP**, Senior Resident in Dermatology.
 
 ---
 
@@ -48,7 +48,7 @@ The database is a single JSON file structured as follows:
 {
   "version": "1.0",
   "last_updated": "2026-03-12",
-  "author": "Dr. Ifeanyi R. Chukwuka, MBBS",
+  "author": "Dr. Ifeanyi R. Chukwuka, MBBS, M.S., MWACP",
   "source": "Clinical dermatology reference + curated research",
   "ingredients": []
 }
@@ -95,7 +95,7 @@ https://raw.githubusercontent.com/steppino45/ingredients-db/main/ingredients.jso
 ```js
 async function loadIngredients() {
   const response = await fetch(
-    "https://raw.githubusercontent.com/steppino45/ingredients-db/main/ingredients.json",
+    "https://raw.githubusercontent.com/steppino45/ingredients-db/refs/heads/main/ingredients.json",
   );
   const data = await response.json();
   return data.ingredients;
@@ -130,7 +130,7 @@ const highlyComedogenic = ingredients.filter((i) => i.comedogenic_rating >= 4);
 
 This database is licensed under the [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License](https://creativecommons.org/licenses/by-nc-nd/4.0/).
 
-© 2026 Dr. Ifeanyi R. Chukwuka, MBBS. All rights reserved.
+© 2026 Dr. Ifeanyi R. Chukwuka, MBBS, M.S., MWACP. All rights reserved.
 
 **You are free to:**
 
